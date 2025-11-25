@@ -48,4 +48,5 @@ def read_debts_file(path):
 
 def write_summary(path, summary_text):
     """write the summary text to a file."""
-    pass #Implementation code here
+    with open(path, "w") as file:
+        file.write(summary_text)
