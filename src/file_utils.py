@@ -1,8 +1,7 @@
 def read_expenses_file(path):
     """Read the expenses file and return a list of expense amounts."""
     expenses = []
-    debts = []
-    
+     
     with open(path, "r") as file:
         for line in file:
             line = line.strip()
@@ -18,6 +17,7 @@ def read_expenses_file(path):
 
 def read_debts_file(path):
     """Read the debts file and return a list of debt entries."""
+    debts = []
     with open(path, "r") as file:
         for line in file:
             line = line.strip()
